@@ -1,0 +1,68 @@
+.home {
+    background-image: url('assets/ombak.jpg');
+    background-size: cover;
+}
+.about {
+    background-image: url('assets/mercusuar.jpg');
+    background-size: cover;
+}
+.navbar-brand {
+    padding: 30px;
+    size: 1.5rem;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.navbar ul li:hover::after {
+    width: 100%;
+}
+.dropdown-toogle:hover {
+    transition: .5;
+    -webkit-transition: .5;
+    -moz-transition: .5;
+    -ms-transition: .5;
+    -o-transition: .5;
+}
+.profile {
+    width: 380px;
+    height: 450px;
+    background: rgba(0, 0, 0, 0.7);
+    margin: 20px auto;
+}
+.profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-left: 120px;
+    margin-top: 20px;
+    background-size: auto;
+}
+.profile h4 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+.profile p {
+    color: white;
+    text-align: center;  
+    margin-top: 20px;
+}

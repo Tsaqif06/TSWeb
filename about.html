@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TsWeb - About Me</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-dark p-md-3 sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">TSWEB</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mx-auto"></div>
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link text-white page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">About Me</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Social Media
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://www.youtube.com/channel/UCLfoXtxaJDOfczuNSWDvmKQ"
+                      >YouTube</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://www.instagram.com/a.tsaqif_al/?hl=id"
+                      >Instagram</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- NAVIGATION END -->
+
+    <!-- BANNER -->
+    <div class="profile">
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEUBAQH////7+/vw8PD4+Pjz8/NcXFyurq7t7e3Kyspqamrl5eVGRkabm5u3t7fQ0NCEhITDw8MiIiJ2dnZRUVE8PDx4eHhwcHBhYWGnp6cvLy+7u7t+fn4nJydKSkpBQUHc3NyLi4s1NTUSEhIbGxvf39+UlJSfn5+9emaMAAADgUlEQVR4nO3c2VLqQBCA4RACCcKBgEFlkU2W93/DA5YLPYgkONhO1/9dQ1V3TZilp0kUAQAAAAAAAAAAAAAAAAAAAAAAAACAP20w7BTFU7OYdVYD7Vg8Wz/+6y6yeiOJa6/ipFFv90bLpnZgXqzyfqN2Vjt90g7wZwbbzfns3mSjsXaYVyta8cX8Xo1etEO9SrNXLr2DRoi/yEn5/A7uteOt6q7k8/npTjvkau6r5rdfQbRjrmRQeQT3utpRV/HvigRrcUiLRv+aDGu5dtgVfJVho73od9M07XYnvU09+eITPe2wK3Cf0kZ/WqzFJ56LvOVmWFeK9hpypumdWQhmbSfF59+N8keOVov+/PzHMpnh7PcC/Lnm2w8t+3Y79igzDOyYscsOx4YLH5Lr5sOvBOZR5/JTtxAZBrc3LUEePwLbmpYixzComaYkOZlaK0/tPYsEM+1wbkAeslra4dyA3L+GtPMu6UUsh/FQOx7/cjGEG+1wbmBj/SF9EgnWtMO5AbncB1WmKacph7CjHY9/ck9qcDF0zoaFdjz+yRJGSFWokpZyCL8pdQRqLcuJfe14/OuKBA1u2JyV4lI5J0Dy5Jtoh+PfSA7hVDse7wpZRFxox+OfU823V4CS86jBacbZrtmrP42dDqkQ+0y+53TZpNrxeLe1/ow6m5nY3o7baeTbasfjnXPBb+9UOJcJJvauYpx5NLg734seZIIT7Xj8k+f6sFr1StlZf0bHcggNFkidI0VInYjldGSCS+14/JONem3tcPwr5BAG1uBVhhxCgxXgoSw+2ZtmnInUXmkmikSCSUitsiXl5odQXNkn68tfCM1KbNgMnimipXhIV9rh3IBYDBfa0dyCKAIb7H2KVscJGrzvjaLpcYYG99zOhajB7i6nUdZeEThy1nuLE43sSzDY3iUvKwzWEPdS6z/DaPaZoMEa4quPWvBOO5KbyQ/7tnpqcc/9bl0UnTBf7wEAAABjxtO0NVkavDl8M3vv+OobvFo7OCooJvb6niPnBXyxwWKU84ZBe63Pzv8PDP4NKHMztFaPmroJBvXesjJOXsxm7e0CL3XrGc5PEzSWYfM0QWP/Qvjiba3GVouHkwStXXTfuQnG1l7ycTLT2HvxnPynTGZw3z0/7p612NQWRcOPUZxY+wl+GOS7dLQ12L4OAAAAAAAAAAAAAAAAAAAA/C3/AaGBHRnBtAxXAAAAAElFTkSuQmCC"
+        alt=""
+      />
+      <h4>Ahmad Tsaqif Al Arifin</h4>
+      <p>
+        Saya Adalah Siswa RPL Kelas 10 Di
+        <span>
+          <a href="https://smkn4malang.sch.id">SMKN 4 Malang.</a>
+        </span>
+        Saya Lahir Pada 2 Agustus 2006 Di Malang Dan Sekarang Tinggal Di Malang.
+        Web Ini Masih Belum Sempurna Karena Saya Masih Cukup Baru Di Dunia
+        Coding, Jadi Maklumilah Jika Ada Kesalahan Pada Visual, Animasi, Teks
+        Atau Yang Lainnya
+      </p>
+    </div>
+    <!-- BANNER END -->
+
+    <!-- CONTENT -->
+    <body class="about">
+      <div class="container mt-3">
+        <div class="row justify-content-center">
+          <div class="card col-sm-6">
+            <img
+              src="assets/bolang.jpg"
+              class="img-thumbnail"
+              alt="..."
+              height="100px"
+              width="100%"
+            />
+            <div class="card-body">
+              <h5>BOLANG</h5>
+              <p class="card-text">
+                Pengalaman Shooting Bolang Walau Hanya Menjadi Temannya ;)
+              </p>
+              <a
+                href="https://www.youtube.com/watch?v=cgqTaaQb9gk&t=88s"
+                class="btn btn-primary"
+                >KLIK</a
+              >
+            </div>
+          </div>
+          <div class="card col-sm-6">
+            <img
+              src="assets/drumbattle.jpg"
+              class="img-thumbnail"
+              alt="..."
+              height="100px"
+              width="100%"
+            />
+            <div class="card-body">
+              <h5>DRUMBATTLE</h5>
+              <p class="card-text">
+                Di Penampilan Pertama Sempat Diejek Oleh Lawan, Tapi Saat
+                Penampilan Kedua....?!?!?!
+              </p>
+              <a
+                href="https://www.youtube.com/watch?v=hEqd0oYdDWg"
+                class="btn btn-primary"
+                >KLIK</a
+              >
+            </div>
+          </div>
+          <div class="card col-sm-6">
+            <img
+              src="assets/program.png"
+              class="img-thumbnail"
+              alt="..."
+              height="100px"
+              width="100%"
+            />
+            <div class="card-body">
+              <h5>KUMPULAN PROGRAM C++ SAYA</h5>
+              <p class="card-text">Beberapa Program C++ Yang Sudah Saya Buat</p>
+              <a
+                href="https://drive.google.com/drive/folders/1rB4SQ1XGjp_O_D6IjD3CpS7WWGUFbo8M?usp=sharing"
+                class="btn btn-primary"
+                >KLIK</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    <!-- CONTENT END -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var nav = document.querySelector("nav");
+
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add("bg-primary", "shadow");
+        } else {
+          nav.classList.remove("bg-primary", "shadow");
+        }
+      });
+    </script>
+  </body>
+</html>

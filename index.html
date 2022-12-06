@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TsWeb - Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="home">
+      <!-- NAVIGATION -->
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-dark p-md-3 sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">TSWEB</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mx-auto"></div>
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link text-white page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="about.html">About Me</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Social Media
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://www.youtube.com/channel/UCLfoXtxaJDOfczuNSWDvmKQ">YouTube</a></li>
+                  <li><a class="dropdown-item" href="https://www.instagram.com/a.tsaqif_al/?hl=id">Instagram</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div> 
+    <!-- NAVIGATION END -->
+    <!-- BANNER  -->
+    <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+     <div class="content text-center">
+      <h1 class="text-white"> Selamat Datang Di TSWEB</h1>
+     </div>
+    </div>
+    <!-- BANNER END  -->
+    <!-- CONTENT -->
+
+  </body>
+    <!-- CONTENT END -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var nav = document.querySelector ('nav');
+
+      window.addEventListener('scroll', function (){
+         if(window.pageYOffset > 100) {
+          nav.classList.add('bg-primary', 'shadow')
+         } else {
+          nav.classList.remove('bg-primary', 'shadow')
+         }
+      });
+    </script>
+  </body>
+</html>
